@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import Link from 'next/link'
 import { createClient } from '@/utils/supabase/server'
 import { getRoutines } from '@/app/actions/routines'
