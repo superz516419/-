@@ -48,10 +48,10 @@ export default function LoginPage() {
             </div>
             
             <div className="flex gap-4 pt-2">
-                <Button formAction={login} className="w-full font-bold">
+                <Button formAction={login as any} className="w-full font-bold">
                 Log In
                 </Button>
-                <Button formAction={signup} variant="outline" className="w-full font-bold">
+                <Button formAction={signup as any} variant="outline" className="w-full font-bold">
                 Sign Up
                 </Button>
             </div>
