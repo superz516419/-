@@ -208,7 +208,7 @@ export async function getWorkoutSummary(workoutId: string) {
 
     const totalSets = workout.sets.length
     
-    const totalVolume = workout.sets.reduce((acc, set) => {
+    const totalVolume = workout.sets.reduce((acc: any, set: any) => {
       return acc + ((set.weight_kg || 0) * (set.reps || 0))
     }, 0)
 
