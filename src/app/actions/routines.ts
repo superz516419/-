@@ -71,7 +71,7 @@ export async function getRoutineDetails(routineId: string) {
 
     // Sort exercises by order
     if (data && data.routine_exercises) {
-      data.routine_exercises.sort((a, b) => a.order - b.order)
+      data.routine_exercises.sort((a: any, b: any) => a.order - b.order)
     }
 
     return { success: true, data: data as RoutineWithExercises }
